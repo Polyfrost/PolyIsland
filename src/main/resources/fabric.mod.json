@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "islandtils",
+  "version": "${version}",
+  "name": "Islandtils",
+  "description": "A simple QOL/Utility mod for MCC Island!",
+  "authors": [
+    "Polyfrost"
+  ],
+  "contact": {
+    "homepage": "https://polyfrost.cc",
+    "issues": "https://github.com/Polyfrost/Islandtils/issues",
+    "sources": "https://github.com/Polyfrost/Islandtils"
+  },
+  "license": "LGPLv3",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "cc.polyfrost.islandtils.Islandtils"
+    ],
+    "preLaunch": [
+      "com.llamalad7.mixinextras.MixinExtrasBootstrap::init"
+    ]
+  },
+  "mixins": [
+    "islandtils.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "fabricloader": ">=0.14.0",
+    "minecraft": "1.19.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "modmenu": ">=4.0.0"
+  }
+}
