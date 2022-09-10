@@ -1,15 +1,22 @@
 package cc.polyfrost.islandtils.utils;
 
+import cc.polyfrost.islandtils.mixin.transformers.BossBarHudAccessor;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.hud.ClientBossBar;
 
+import java.util.Collection;
 import java.util.Locale;
 
 public class ServerUtils {
-    public static MinecraftClient mcInstance = MinecraftClient.getInstance();
+    public static MinecraftClient mc = MinecraftClient.getInstance();
 
     public static boolean isOnMCCIsland() {
-        if (mcInstance.world == null || mcInstance.player == null || mcInstance.isInSingleplayer()) return false;
+        if (mc.getCurrentServerEntry() == null || mc.getCurrentServerEntry().address == null) return false;
 
-        return mcInstance.player.getServerBrand().toLowerCase(Locale.ENGLISH).contains("mcc");
+        return mc.getCurrentServerEntry().address.toLowerCase(Locale.ENGLISH).endsWith("mccisland.net");
+    }
+
+    public static Collection<ClientBossBar> getServerBossBars() {
+        return ((BossBarHudAccessor) mc.inGameHud.getBossBarHud()).getBossBars().values();
     }
 }

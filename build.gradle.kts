@@ -15,6 +15,7 @@ repositories {
     maven("https://maven.shedaniel.me/")
     maven("https://maven.terraformersmc.com/releases")
     maven("https://jitpack.io")
+    maven("https://pkgs.dev.azure.com/djtheredstoner/DevAuth/_packaging/public/maven/v1")
 }
 
 dependencies {
@@ -30,6 +31,8 @@ dependencies {
         annotationProcessor(it)
         include(it)
     }
+
+    modRuntimeOnly(libs.devauth)
 }
 
 
