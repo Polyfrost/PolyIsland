@@ -8,7 +8,8 @@
   "client": [
     "transformers.BossBarHudAccessor",
     "transformers.ChatHudMixin",
-    "transformers.InGameHudAccessor"
+    "transformers.InGameHudAccessor",
+    "transformers.InGameHudMixin"
   ],
   "verbose": true
 }

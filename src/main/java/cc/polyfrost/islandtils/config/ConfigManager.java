@@ -59,6 +59,16 @@ public class ConfigManager {
                                 )
                                 .controller(BooleanController::new)
                                 .build())
+                        .option(Option.createBuilder(boolean.class)
+                                .name(Text.of("Add Green Vignette"))
+                                .tooltip(Text.of("Show a green vignette when green light is on in Red Light Green Light"))
+                                .binding(
+                                        true,
+                                        () -> getConfig().greenVignette,
+                                        newValue -> getConfig().greenVignette = newValue
+                                )
+                                .controller(BooleanController::new)
+                                .build())
                         .build())
                 .save(this::save)
                 .build()
