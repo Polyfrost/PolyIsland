@@ -1,7 +1,7 @@
 plugins {
     java
 
-    id("fabric-loom") version "0.12.+"
+    id("fabric-loom") version "1.0.+"
     id("io.github.juuxel.loom-quiltflower") version "1.7.+"
 }
 

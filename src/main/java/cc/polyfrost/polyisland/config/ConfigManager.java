@@ -69,6 +69,16 @@ public class ConfigManager {
                                 )
                                 .controller(BooleanController::new)
                                 .build())
+                        .option(Option.createBuilder(boolean.class)
+                                .name(Text.of("Hide Players in HITW"))
+                                .tooltip(Text.of("Hide all players in Hole In The Wall"))
+                                .binding(
+                                        false,
+                                        () -> getConfig().hideHITWPlayers,
+                                        newValue -> getConfig().hideHITWPlayers = newValue
+                                )
+                                .controller(BooleanController::new)
+                                .build())
                         .build())
                 .save(this::save)
                 .build()

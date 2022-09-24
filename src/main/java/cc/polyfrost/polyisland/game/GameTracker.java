@@ -26,6 +26,10 @@ public class GameTracker {
         return this.currentGame;
     }
 
+    public GameState getState() {
+        return this.state;
+    }
+
     public LightState getLightState() {
         return this.lightState;
     }
