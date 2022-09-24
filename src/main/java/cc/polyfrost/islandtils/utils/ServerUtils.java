@@ -8,7 +8,7 @@ import java.util.Collection;
 import java.util.Locale;
 
 public class ServerUtils {
-    public static MinecraftClient mc = MinecraftClient.getInstance();
+    private static final MinecraftClient mc = MinecraftClient.getInstance();
 
     public static boolean isOnMCCIsland() {
         if (mc.getCurrentServerEntry() == null || mc.getCurrentServerEntry().address == null) return false;

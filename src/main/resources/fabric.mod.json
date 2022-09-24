@@ -20,12 +20,16 @@
     ],
     "preLaunch": [
       "com.llamalad7.mixinextras.MixinExtrasBootstrap::init"
+    ],
+    "modmenu": [
+      "cc.polyfrost.islandtils.config.ModMenuCompat"
     ]
   },
   "mixins": [
     "islandtils.mixins.json"
   ],
   "depends": {
+    "yet-another-config-lib": "*",
     "fabric": "*",
     "fabricloader": ">=0.14.0",
     "minecraft": "1.19.x",
