@@ -12,4 +12,4 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Islandtils"
+rootProject.name = "PolyIsland"

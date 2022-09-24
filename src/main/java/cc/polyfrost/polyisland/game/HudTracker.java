@@ -1,7 +1,7 @@
-package cc.polyfrost.islandtils.game;
+package cc.polyfrost.polyisland.game;
 
-import cc.polyfrost.islandtils.config.ConfigManager;
-import cc.polyfrost.islandtils.mixin.transformers.InGameHudAccessor;
+import cc.polyfrost.polyisland.config.ConfigManager;
+import cc.polyfrost.polyisland.mixin.transformers.InGameHudAccessor;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.util.math.MatrixStack;
 

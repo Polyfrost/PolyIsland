@@ -1,4 +1,4 @@
-package cc.polyfrost.islandtils.config;
+package cc.polyfrost.polyisland.config;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -16,7 +16,7 @@ import java.nio.file.Path;
 
 public class ConfigManager {
     public static final ConfigManager INSTANCE = new ConfigManager();
-    public final Path configFile = FabricLoader.getInstance().getConfigDir().resolve("islandtils.json");
+    public final Path configFile = FabricLoader.getInstance().getConfigDir().resolve("polyisland.json");
     private final Gson gson = new GsonBuilder().setPrettyPrinting().create();
     private static IslandConfig config;
 
@@ -45,10 +45,10 @@ public class ConfigManager {
 
     public Screen createGui(Screen parent) {
         return YetAnotherConfigLib.createBuilder()
-                .title(Text.of("Islandtils"))
+                .title(Text.of("PolyIsland"))
                 .category(ConfigCategory.createBuilder()
                         .name(Text.of("General"))
-                        .tooltip(Text.of("General options for Islandtils"))
+                        .tooltip(Text.of("General options for PolyIsland"))
                         .option(Option.createBuilder(boolean.class)
                                 .name(Text.of("Show Light Indicator"))
                                 .tooltip(Text.of("Shows a indicator for Red Light Green Light"))

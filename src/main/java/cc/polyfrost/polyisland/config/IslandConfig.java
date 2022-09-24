@@ -1,4 +1,4 @@
-package cc.polyfrost.islandtils.config;
+package cc.polyfrost.polyisland.config;
 
 public class IslandConfig {
     public boolean lightIndicator = true;

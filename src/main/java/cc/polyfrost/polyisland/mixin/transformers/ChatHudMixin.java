@@ -1,6 +1,6 @@
-package cc.polyfrost.islandtils.mixin.transformers;
+package cc.polyfrost.polyisland.mixin.transformers;
 
-import cc.polyfrost.islandtils.game.GameTracker;
+import cc.polyfrost.polyisland.game.GameTracker;
 import net.minecraft.client.gui.hud.ChatHud;
 import net.minecraft.client.gui.hud.MessageIndicator;
 import net.minecraft.network.message.MessageSignatureData;

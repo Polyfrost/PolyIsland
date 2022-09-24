@@ -1,8 +1,8 @@
-package cc.polyfrost.islandtils.mixin.transformers;
+package cc.polyfrost.polyisland.mixin.transformers;
 
-import cc.polyfrost.islandtils.config.ConfigManager;
-import cc.polyfrost.islandtils.game.GameTracker;
-import cc.polyfrost.islandtils.game.LightState;
+import cc.polyfrost.polyisland.config.ConfigManager;
+import cc.polyfrost.polyisland.game.GameTracker;
+import cc.polyfrost.polyisland.game.LightState;
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import net.minecraft.client.gui.hud.InGameHud;
 import org.spongepowered.asm.mixin.Mixin;

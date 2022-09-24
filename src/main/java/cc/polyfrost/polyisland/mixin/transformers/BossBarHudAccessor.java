@@ -1,4 +1,4 @@
-package cc.polyfrost.islandtils.mixin.transformers;
+package cc.polyfrost.polyisland.mixin.transformers;
 
 import net.minecraft.client.gui.hud.BossBarHud;
 import net.minecraft.client.gui.hud.ClientBossBar;

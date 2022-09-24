@@ -1,6 +1,6 @@
-package cc.polyfrost.islandtils.game;
+package cc.polyfrost.polyisland.game;
 
-import cc.polyfrost.islandtils.utils.ServerUtils;
+import cc.polyfrost.polyisland.utils.ServerUtils;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.DeathScreen;
 import net.minecraft.client.world.ClientWorld;

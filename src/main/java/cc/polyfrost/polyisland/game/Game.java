@@ -1,4 +1,4 @@
-package cc.polyfrost.islandtils.game;
+package cc.polyfrost.polyisland.game;
 
 import net.minecraft.util.StringIdentifiable;
 

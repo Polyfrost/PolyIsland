@@ -1,4 +1,4 @@
-package cc.polyfrost.islandtils.mixin.transformers;
+package cc.polyfrost.polyisland.mixin.transformers;
 
 import net.minecraft.client.font.TextRenderer;
 import net.minecraft.client.gui.hud.InGameHud;

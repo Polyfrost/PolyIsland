@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "cc.polyfrost.islandtils.mixin",
+  "package": "cc.polyfrost.polyisland.mixin",
   "compatibilityLevel": "JAVA_17",
   "injectors": {
     "defaultRequire": 1

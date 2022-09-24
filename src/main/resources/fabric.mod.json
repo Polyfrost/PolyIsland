@@ -1,32 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "islandtils",
+  "id": "polyisland",
   "version": "${version}",
-  "name": "Islandtils",
+  "name": "PolyIsland",
   "description": "A simple QOL/Utility mod for MCC Island!",
   "authors": [
     "Polyfrost"
   ],
   "contact": {
     "homepage": "https://polyfrost.cc",
-    "issues": "https://github.com/Polyfrost/Islandtils/issues",
-    "sources": "https://github.com/Polyfrost/Islandtils"
+    "issues": "https://github.com/Polyfrost/PolyIsland/issues",
+    "sources": "https://github.com/Polyfrost/PolyIsland"
   },
   "license": "LGPLv3",
   "environment": "client",
   "entrypoints": {
     "client": [
-      "cc.polyfrost.islandtils.Islandtils"
+      "cc.polyfrost.polyisland.PolyIsland"
     ],
     "preLaunch": [
       "com.llamalad7.mixinextras.MixinExtrasBootstrap::init"
     ],
     "modmenu": [
-      "cc.polyfrost.islandtils.config.ModMenuCompat"
+      "cc.polyfrost.polyisland.config.ModMenuCompat"
     ]
   },
   "mixins": [
-    "islandtils.mixins.json"
+    "polyisland.mixins.json"
   ],
   "depends": {
     "yet-another-config-lib": "*",

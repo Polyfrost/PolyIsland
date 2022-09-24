@@ -1,4 +1,4 @@
-package cc.polyfrost.islandtils.game;
+package cc.polyfrost.polyisland.game;
 
 /**
  * RED LIGHT GREEN LIGHT IS THE WORST MODIFIER IN HISTORY

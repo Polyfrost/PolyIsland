@@ -1,6 +1,6 @@
-package cc.polyfrost.islandtils.utils;
+package cc.polyfrost.polyisland.utils;
 
-import cc.polyfrost.islandtils.mixin.transformers.BossBarHudAccessor;
+import cc.polyfrost.polyisland.mixin.transformers.BossBarHudAccessor;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.hud.ClientBossBar;
 

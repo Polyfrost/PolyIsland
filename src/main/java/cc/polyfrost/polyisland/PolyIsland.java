@@ -1,13 +1,13 @@
-package cc.polyfrost.islandtils;
+package cc.polyfrost.polyisland;
 
-import cc.polyfrost.islandtils.config.ConfigManager;
-import cc.polyfrost.islandtils.game.GameTracker;
-import cc.polyfrost.islandtils.game.HudTracker;
+import cc.polyfrost.polyisland.config.ConfigManager;
+import cc.polyfrost.polyisland.game.GameTracker;
+import cc.polyfrost.polyisland.game.HudTracker;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 
-public class Islandtils implements ClientModInitializer {
+public class PolyIsland implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         ConfigManager.INSTANCE.load();
