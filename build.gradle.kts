@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "cc.polyfrost"
-version = "1.0.0-alpha1"
+version = "1.0.0-alpha3"
 
 repositories {
     mavenCentral()
