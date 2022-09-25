@@ -9,8 +9,7 @@
     "transformers.BossBarHudAccessor",
     "transformers.ChatHudMixin",
     "transformers.InGameHudAccessor",
-    "transformers.InGameHudMixin",
-    "transformers.WorldRendererMixin"
+    "transformers.InGameHudMixin"
   ],
   "verbose": true
 }
