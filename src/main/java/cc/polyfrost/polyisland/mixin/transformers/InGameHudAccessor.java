@@ -8,6 +8,6 @@ import org.spongepowered.asm.mixin.gen.Invoker;
 
 @Mixin(InGameHud.class)
 public interface InGameHudAccessor {
-    @Invoker("drawTextBackground")
+    @Invoker
     void invokeDrawTextBackground(MatrixStack matrices, TextRenderer textRenderer, int yOffset, int width, int color);
 }

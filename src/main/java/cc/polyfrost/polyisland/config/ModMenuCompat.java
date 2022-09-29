@@ -7,6 +7,6 @@ public class ModMenuCompat implements ModMenuApi {
 
     @Override
     public ConfigScreenFactory<?> getModConfigScreenFactory() {
-        return ConfigManager.INSTANCE::createGui;
+        return parent -> IslandConfig.getInstance().createGui(parent);
     }
 }

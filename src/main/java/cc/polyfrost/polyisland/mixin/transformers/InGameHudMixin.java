@@ -1,6 +1,6 @@
 package cc.polyfrost.polyisland.mixin.transformers;
 
-import cc.polyfrost.polyisland.config.ConfigManager;
+import cc.polyfrost.polyisland.config.IslandConfig;
 import cc.polyfrost.polyisland.game.GameTracker;
 import cc.polyfrost.polyisland.game.LightState;
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
@@ -17,7 +17,7 @@ public class InGameHudMixin {
 
     @ModifyExpressionValue(method = "renderVignetteOverlay", at = @At(value = "INVOKE", target = "Ljava/lang/Math;max(DD)D"))
     private double modifyVignette(double value) {
-        if (ConfigManager.INSTANCE.getConfig().greenVignette && GameTracker.INSTANCE.getLightState() == LightState.GREEN) {
+        if (IslandConfig.getInstance().greenVignette && GameTracker.INSTANCE.getLightState() == LightState.GREEN) {
             aboutToDoTrolling = true;
             return Integer.MAX_VALUE;
         } else {
