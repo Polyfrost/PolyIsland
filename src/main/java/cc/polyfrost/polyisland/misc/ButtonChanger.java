@@ -1,6 +1,6 @@
 package cc.polyfrost.polyisland.misc;
 
-import cc.polyfrost.polyisland.config.ConfigManager;
+import cc.polyfrost.polyisland.config.IslandConfig;
 import net.fabricmc.fabric.api.client.screen.v1.Screens;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.GameMenuScreen;
@@ -16,7 +16,7 @@ public class ButtonChanger {
     public void afterInitButtons(MinecraftClient mc, Screen screen, int scaledWidth, int scaledHeight) {
         if (screen instanceof GameMenuScreen gms) {
             var buttons = Screens.getButtons(gms);
-            var setting = ConfigManager.INSTANCE.getConfig().playerReportingReplacement;
+            var setting = IslandConfig.getInstance().playerReportingReplacement;
             for (ClickableWidget button : buttons) {
                 if (button.getMessage().getContent() instanceof TranslatableTextContent ttc) {
                     if (ttc.getKey().equals("menu.playerReporting")) {
@@ -37,8 +37,8 @@ public class ButtonChanger {
     private ButtonWidget makeButton(ClickableWidget oldButton, MinecraftClient mc) {
         return new ButtonWidget(oldButton.x, oldButton.y,
                 oldButton.getWidth(), oldButton.getHeight(),
-                Text.literal("PolyIsland Options"), button1 -> {
-            mc.setScreen(ConfigManager.INSTANCE.createGui(mc.currentScreen));
-        });
+                Text.literal("PolyIsland Options"),
+                button1 -> mc.setScreen(IslandConfig.getInstance().createGui(mc.currentScreen))
+        );
     }
 }
