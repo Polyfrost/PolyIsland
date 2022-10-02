@@ -9,6 +9,7 @@ import dev.isxander.yacl.api.ConfigCategory;
 import dev.isxander.yacl.api.Option;
 import dev.isxander.yacl.api.YetAnotherConfigLib;
 import dev.isxander.yacl.gui.controllers.BooleanController;
+import dev.isxander.yacl.gui.controllers.EnumController;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.text.Text;
@@ -89,6 +90,16 @@ public class IslandConfig {
                                         newValue -> greenVignette = newValue
                                 )
                                 .controller(BooleanController::new)
+                                .build())
+                        .option(Option.createBuilder(ReportButtonSetting.class)
+                                .name(Text.of("Player Reporting Button"))
+                                .tooltip(Text.of("Options to remove or replace the player report button on the escape menu."))
+                                .binding(
+                                        DEFAULTS.playerReportingReplacement,
+                                        () -> playerReportingReplacement,
+                                        newValue -> playerReportingReplacement = newValue
+                                )
+                                .controller(EnumController::new)
                                 .build())
                         .build())
                 .save(this::save)
